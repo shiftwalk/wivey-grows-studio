@@ -7,7 +7,8 @@ import {
   FiSmile,
   FiUsers,
   FiFileText,
-  FiMessageCircle
+  FiMessageCircle,
+  FiCalendar
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -41,6 +42,8 @@ export default () =>
       S.listItem().title('About Us').child(S.editor().id('about').schemaType('about').documentId('singleton-about').views(getPreview('about'))).icon(FiSmile),
       S.divider(),
       S.listItem().title('Growers').child(S.documentTypeList('growers').title('Growers')).icon(FiUsers),
+      S.divider(),
+      S.listItem().title('Calendar').child(S.editor().id('calendar').schemaType('calendar').documentId('singleton-calendar').views(getPreview('calendar'))).icon(FiCalendar),
       S.divider(),
       S.listItem().title('Blog').child(S.documentTypeList('blog').title('Blog')).icon(FiFileText),
       S.divider(),

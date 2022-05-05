@@ -28,6 +28,12 @@ export default {
       name: "image",
       type: "defaultImage",
       validation: Rule => Rule.required()
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
     }
   ],
   preview: {
