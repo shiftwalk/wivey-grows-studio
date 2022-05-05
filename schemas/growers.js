@@ -18,6 +18,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Bio",
+      name: "bio",
+      type: "text",
+      rows: 4,
+    },
+    {
       title: "Image",
       name: "image",
       type: "defaultImage",

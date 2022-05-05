@@ -12,6 +12,12 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: "Author",
+      name: "author",
+      type: "string",
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Published date',
       name: 'publishedDate',
       type: 'date',
