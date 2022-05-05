@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "shiftwalk-sanity-starter"
-  },
   "api": {
-    "projectId": "your-id-here",
+    "projectId": "v18mum1h",
     "dataset": "production"
+  },
+  "project": {
+    "name": "wivey-grows"
   },
   "plugins": [
     "@sanity/base",

@@ -1,6 +1,6 @@
 export default {
-  title: 'Home',
-  name: 'home',
+  title: 'About Us',
+  name: 'about',
   type: 'document',
   __experimental_actions: ['update', 'create', 'delete', 'publish'],
   fields: [
@@ -17,23 +17,16 @@ export default {
       validation: Rule => Rule.required()
     },
     {
-      title: 'Hero Text',
-      name: 'heroText',
+      title: 'Intro Text',
+      name: 'introText',
       type: 'text',
       rows: 4,
       validation: Rule => Rule.required()
     },
     {
-      title: 'Community Text',
-      name: 'communityText',
-      type: 'text',
-      rows: 4,
-      validation: Rule => Rule.required()
-    },
-    {
-      name: 'imageGallery',
+      title: 'Intro Image Gallery',
+      name: 'introImageGallery',
       type: 'array',
-      title: 'Image Gallery',
       of: [
         {
           name: 'image',
@@ -46,9 +39,25 @@ export default {
       },
     },
     {
-      title: 'Gallery Video',
-      name: 'galleryVideo',
-      type: 'file'
+      title: 'Quote',
+      name: 'quote',
+      type: 'text',
+      rows: 2,
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Ethos Points',
+      name: 'ethosPoints',
+      type: 'array', 
+      of: [{type: 'text', rows: 3 }],
+      validation: Rule => Rule.required()
+    },
+    {
+      title: 'Our Growers Text',
+      name: 'ourGrowersText',
+      type: 'text',
+      rows: 4,
+      validation: Rule => Rule.required()
     },
     {
       title: 'SEO / Share Settings',
