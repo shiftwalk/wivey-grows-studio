@@ -22,7 +22,7 @@ export default {
       name: 'publishedDate',
       type: 'date',
       options: {
-        dateFormat: 'DD.MM.YYYY',
+        dateFormat: 'MMMM do, yyyy H:mma',
         calendarTodayLabel: 'Today'
       }
     },

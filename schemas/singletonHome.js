@@ -51,6 +51,11 @@ export default {
       type: 'file'
     },
     {
+      title: 'Gallery Image',
+      name: 'galleryImage',
+      type: 'defaultImage'
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'
