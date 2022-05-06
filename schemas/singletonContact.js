@@ -23,6 +23,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Become A Wivey Grower Text',
+      name: 'becomeAWiveyGrowerText',
+      type: 'array', 
+      of: [{type: 'block'}],
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'Email',
       name: 'email',
       type: 'string',

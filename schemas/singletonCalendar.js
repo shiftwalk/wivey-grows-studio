@@ -13,7 +13,8 @@ export default {
     {
       title: 'Intro Text',
       name: 'introText',
-      type: 'text',
+      type: 'array', 
+      of: [{type: 'block'}],
       validation: Rule => Rule.required()
     },
   ],
