@@ -14,6 +14,8 @@ import blog from './blog'
 // Common
 import seo from './common/seo'
 import defaultImage from './common/defaultImage'
+import blockContentExtended from './common/blockContentExtended'
+import blockContent from './common/blockContent'
 
 export default createSchema({
   name: 'default',
@@ -26,6 +28,8 @@ export default createSchema({
     growers,
     blog,
     defaultImage,
+    blockContent,
+    blockContentExtended,
     seo
   ]),
 })

@@ -34,11 +34,17 @@ export default {
     },
     {
       title: 'Content',
-      name: 'content',
-      type: 'array', 
-      of: [{type: 'block'}],
+      name: 'newContent',
+      type: 'blockContentExtended',
       validation: Rule => Rule.required()
     },
+    // {
+    //   title: 'Content',
+    //   name: 'content',
+    //   type: 'array', 
+    //   of: [{type: 'block'}],
+    //   validation: Rule => Rule.required()
+    // },
     {
       name: 'slug',
       type: 'slug',
