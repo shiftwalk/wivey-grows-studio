@@ -9,7 +9,9 @@ import singletonCalendar from './singletonCalendar'
 
 // Documents
 import growers from './growers'
+import sponsors from './sponsors'
 import blog from './blog'
+import radio from './radio'
 
 // Common
 import seo from './common/seo'
@@ -26,7 +28,9 @@ export default createSchema({
     singletonContact,
     singletonCalendar,
     growers,
+    sponsors,
     blog,
+    radio,
     defaultImage,
     blockContent,
     blockContentExtended,

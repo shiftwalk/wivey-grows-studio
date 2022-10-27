@@ -60,6 +60,13 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      title: 'Our Sponsors/Donators Text',
+      name: 'ourSponsorsText',
+      type: 'text',
+      rows: 4,
+      validation: Rule => Rule.required()
+    },
+    {
       title: 'SEO / Share Settings',
       name: 'seo',
       type: 'seo'

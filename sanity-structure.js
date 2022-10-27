@@ -8,7 +8,8 @@ import {
   FiUsers,
   FiFileText,
   FiMessageCircle,
-  FiCalendar
+  FiCalendar,
+  FiVolume2
 } from 'react-icons/fi'
 
 import { getGlobalSlug, previewURL } from './utils/resolveProductionUrl'
@@ -43,9 +44,13 @@ export default () =>
       S.divider(),
       S.listItem().title('Growers').child(S.documentTypeList('growers').title('Growers')).icon(FiUsers),
       S.divider(),
+      S.listItem().title('Sponsors / Donors').child(S.documentTypeList('sponsors').title('Sponsors')).icon(FiUsers),
+      S.divider(),
       S.listItem().title('Calendar').child(S.editor().id('calendar').schemaType('calendar').documentId('singleton-calendar').views(getPreview('calendar'))).icon(FiCalendar),
       S.divider(),
       S.listItem().title('Blog').child(S.documentTypeList('blog').title('Blog')).icon(FiFileText),
+      S.divider(),
+      S.listItem().title('Radio').child(S.documentTypeList('radio').title('Radio')).icon(FiVolume2),
       S.divider(),
       S.listItem().title('Contact').child(S.editor().id('contact').schemaType('contact').documentId('singleton-contact').views(getPreview('contact'))).icon(FiMessageCircle),
     ]);
